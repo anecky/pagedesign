@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>厉害了我的国</title> 
+<link rel="stylesheet" type="text/css" href="./css/style.css">
+<script type="text/javascript" src="./js/love.js"></script>
+<style type="text/css">
+   /* .wrap-body{
+    widows: 100%;
+    height:3000px;
+    text-align: center;
+    position:relative;
+    background: url(./image/背景11.jpg) no-repeat center center;
+}  */
+</style>
+</head>
+<body class="index-page">
+    <div class="wrap-body top"> 
+        <div class="banner">
+            <div class="banner1">
+                      <img src="./image/3.jpg" alt="背景3" id="myimg"/>
+                    <img src="./image/2.jpg" alt="背景2" id="myimg"/>
+            </div>
+        </div>
+        <div class="page-header">
+            <ul class="page_header1">
+                <li class="list list1"><a href="./great.html">辉煌中国</a></li>
+                <li class="list list2"><a href="./develop.html">发展历程</a></li>
+                <li class="list list3"><a href="http://jingji.cctv.com/special/lhl/">CCTV</a></li>
+            </ul>
+        </div>
+
+        <!-- main -->
+        <div class="content">
+            <div class="main1">
+                <div class="main1left">
+                    <img src="./image/第一个圆梦工程.jpg" alt="第一个圆梦工程"/>
+                </div>
+                <div class="main1right">
+                        <h2>圆梦工程</h2>
+                        <p>
+                            一个个超级工程，领略五年来，一张张中国基础建设的大网，如何编织起人民走向幸福、美好的希望版图，托举起中华民族伟大复兴的中国梦。
+                        </p>
+                        
+                        <div class="learnmore"><a href="">了解更多</a></div>        
+                </div>
+            </div>
+            <div class="main1">
+
+                <div class="main1right">
+                    <h2>创新活力</h2>
+                    <p>中国的创新动力源源不竭，创新人才不断涌现。本集选取创新故事，讲述中国科技创新，如何让百姓生活更为便捷，让企业发展更具活力，让国家实力更加强大。</p>
+                    <div class="learnmore"><a href="">了解更多</a></div>
+                </div>
+                <div class="main1left">
+                    <img src="./image/创新活力.jpg" alt="创新活力"/>
+                </div>
+            </div>
+            <div class="main1">
+                <div class="main1right">
+                    <h2>协调发展</h2>
+                    <p>中国的创新动力源源不竭，创新人才不断涌现。本集选取创新故事，讲述中国科技创新，如何让百姓生活更为便捷，让企业发展更具活力，让国家实力更加强大。</p>
+                    <div class="learnmore"><a href="">了解更多</a></div>
+                </div>
+                <div class="main1left">
+                    <img src="./image/协调发展.jpg" alt="协调发展"/>
+                </div>
+            </div>
+            <div class="main1">
+            	<div class="main1left">
+            		<img src="./image/绿色家园.jpg" alt="协调发展"/>
+            	</div>
+            	<div class="main1right">
+            		<h2>绿色家园</h2>
+            		<p>中国的创新动力源源不竭，创新人才不断涌现。本集选取创新故事，讲述中国科技创新，如何让百姓生活更为便捷，让企业发展更具活力，让国家实力更加强大。</p>
+            		<div class="learnmore">
+            			<a href="">了解更多</a>
+            		</div>
+            	</div>
+            </div>
+            <div class="main1">
+            	<div class="main1left">
+            		<img src="./image/共享小康.jpg" alt="共享小康"/>
+            	</div>
+            	<div class="main1right">
+            		<h2>共享小康</h2>
+            		<p>中国的创新动力源源不竭，创新人才不断涌现。本集选取创新故事，讲述中国科技创新，如何让百姓生活更为便捷，让企业发展更具活力，让国家实力更加强大。</p>
+            		<div class="learnmore">
+            			<a href="">了解更多</a>
+            		</div>
+            	</div>
+            </div>
+            <div class="main1">
+            	<div class="main1left">
+            		<img src="./image/开放中国.jpg" alt="开放中国"/>
+            	</div>
+            	<div class="main1right">
+            		<h2>开放中国</h2>
+            		<p>中国的创新动力源源不竭，创新人才不断涌现。本集选取创新故事，讲述中国科技创新，如何让百姓生活更为便捷，让企业发展更具活力，让国家实力更加强大。</p>
+            		<div class="learnmore">
+            			<a href="#">了解更多</a>
+            		</div>
+            	</div>
+            </div>
+        </div>
+        <!-- top -->
+        <a class="atop" href="#top"></a>
+    </div>
+</body>
+<script type="text/javascript">
+    window.onload=function(){
+            window.setInterval(changeImg,3000);
+
+        var index=2;
+        function changeImg(){
+            index++;
+            var myimg=document.getElementById('myimg');          
+            if(index>3){
+                index=2;
+            } 
+            myimg.src="./image/"+index+".jpg";
+        }
+    }
+</script>
+</html>
