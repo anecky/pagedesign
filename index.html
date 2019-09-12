@@ -4,8 +4,7 @@
 <meta charset="utf-8"> 
 <title>厉害了我的国</title> 
 <link rel="stylesheet" type="text/css" href="./css/style.css">
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-<script src="http://code.jquery.com/jquery-latest.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/style.css">
 <script type="text/javascript" src="./js/love.js"></script>
 <style type="text/css">
    /* .wrap-body{
@@ -115,6 +114,18 @@
     </div>
 </body>
 <script type="text/javascript">
-   
+    window.onload=function(){
+            window.setInterval(changeImg,3000);
+
+        var index=2;
+        function changeImg(){
+            index++;
+            var myimg=document.getElementById('myimg');          
+            if(index>4){
+                index=2;
+            } 
+            myimg.src="./image/"+index+".jpg";
+        }
+    }
 </script>
 </html>
